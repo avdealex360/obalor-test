@@ -80,7 +80,6 @@ class FileMerger
 
             //валидируем
             $validatator = Validator::make($customerData, [
-                'name' => 'required',
                 'age' => 'required|numeric|between:18,99',
                 'email' => 'required|email',
                 'location' => 'required|string',
